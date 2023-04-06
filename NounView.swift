@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct NounView: View {
-    @State var madlib: MadLib
+    @State var madlib: MadLib = MadLib(noun: "", verb: "", adjective: "")
     var body: some View {
         NavigationView {
             NavigationLink {
