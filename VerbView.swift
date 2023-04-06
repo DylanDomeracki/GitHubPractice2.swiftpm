@@ -9,12 +9,16 @@ import Foundation
 import SwiftUI
 
 struct VerbView: View {
+    @Binding var madlib: MadLib
     var body: some View {
         NavigationView{
-            NavigationLink {
-                AdjectiveView()
-            } label: {
-               Text("Adjective")
+            VStack {
+                TextField("Verb", text: $madlib.verb)
+                NavigationLink {
+                    AdjectiveView(madlib: madlib)
+                } label: {
+                   Text("Adjective")
+                }
             }
         }
     }
