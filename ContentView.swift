@@ -6,7 +6,7 @@ struct ContentView: View {
             NavigationLink {
                 NounView()
             } label: {
-                Text("Noun")
+                Text("Start MadLib")
             }
         }
     }

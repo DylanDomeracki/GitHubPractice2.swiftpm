@@ -17,7 +17,7 @@ struct VerbView: View {
                 NavigationLink {
                     AdjectiveView(madlib: $madlib)
                 } label: {
-                   Text("Adjective")
+                   Text("To Adjective View")
                 }
             }
         }
