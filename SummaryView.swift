@@ -9,9 +9,9 @@ import Foundation
 import SwiftUI
 
 struct SummaryView: View {
+    @Binding var madlib: MadLib
     var body: some View {
-        Text("The adjective noun likes to verb ")
-
-        }
+        Text("The \(madlib.adjective) \(madlib.noun) likes to \(madlib.verb) ")
     }
+}
 
