@@ -15,7 +15,7 @@ struct VerbView: View {
             VStack {
                 TextField("Verb", text: $madlib.verb)
                 NavigationLink {
-                    AdjectiveView(madlib: madlib)
+                    AdjectiveView(madlib: $madlib)
                 } label: {
                    Text("Adjective")
                 }

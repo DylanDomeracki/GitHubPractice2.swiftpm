@@ -1,5 +1,5 @@
 struct MadLib {
-    let noun: String
-    let varb: String
-    let adjective: String
+    var noun: String
+    var verb: String
+    var adjective: String
 }

@@ -7,9 +7,9 @@ struct NounView: View {
             NavigationLink {
                 VerbView(madlib: $madlib)
             } label: {
-                Text("To Noun View")
+                Text("To Verb View")
                 }
-            TextField("Noun", text: madlib.noun)
+            TextField("Noun", text: $madlib.noun)
         }
     }
 }
